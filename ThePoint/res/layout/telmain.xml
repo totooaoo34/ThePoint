@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <AutoCompleteTextView
+            android:id="@+id/word"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:alpha="40"
+            android:ems="20"
+            android:textColor="#fffff0"
+            android:textSize="50sp" >
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+        
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="40"
+            android:text="查询來源:"
+            android:textColor="#fffff0" />
+
+        <!-- 用户显示查询的结果 -->
+
+        <EditText
+            android:id="@+id/et_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="40"
+            android:ems="10"
+            android:text="單詞本"
+            android:textColor="#fffff0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/searchWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:textColor="#dddddd"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/UpdatePerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刷新"
+            android:textColor="#dddddd"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/DeletePerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="去除"
+            android:textColor="#dddddd"
+            android:textSize="34sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.68"
+        android:alpha="40"
+        android:text="結果在這裡顯示"
+        android:textColor="#00000f"
+        android:textSize="34sp" />
+    </LinearLayout>
+<ListView
+            android:id="@+id/lv_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true">
+        </ListView>
+</LinearLayout>

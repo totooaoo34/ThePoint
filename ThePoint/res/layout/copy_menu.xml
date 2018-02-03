@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="60"
+    android:background="#00000f"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <RadioGroup
+        android:id="@+id/FileModeSwich"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/RC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+             android:layout_gravity="center"
+            android:text="複製"
+            android:textColor="@color/gary"
+            android:textSize="34dp" />
+
+        <RadioButton
+            android:id="@+id/RD"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="刪除"
+            android:textColor="@color/gary"
+            android:textSize="34dp" />
+    </RadioGroup>
+<LinearLayout 
+    android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btnCreate"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/root"/>
+
+    <Button
+        android:id="@+id/btnDelete"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/uptohigh"/>
+</LinearLayout>
+</LinearLayout>

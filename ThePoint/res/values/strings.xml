@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">極管家</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Totoo</string>
+    <color name="gary">#f3f3f3</color>
+ <color name="white">#00000f</color>
+
+</resources>
